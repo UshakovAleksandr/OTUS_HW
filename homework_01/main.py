@@ -33,10 +33,12 @@ def filter_numbers(lst_of_int_numbers, type_of_filter):
         return prime_lst
 
 
+ODD = "odd"  # нечетные
+EVEN = "even"  # четные
+PRIME = "prime"  # простые
+
+
 def main():
-    ODD = "odd"  # нечетные
-    EVEN = "even"  # четные
-    PRIME = "prime"  # простые
     lst = [1, 2, 4, 5, 7, 11, 14, 23, 30, 34, 45, 56]
     print(f"Массив квадратов чисел: {power_numbers(lst)}")
     print(f"Массив нечетных чисел: {filter_numbers(lst, ODD)}")
