@@ -4,7 +4,7 @@
 """
 
 
-def power_numbers(lst_of_int_numbers):
+def power_numbers(*lst_of_int_numbers):
     pow_nums = [i ** 2 for i in lst_of_int_numbers]
     return pow_nums
 
