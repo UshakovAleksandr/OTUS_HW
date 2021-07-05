@@ -4,8 +4,8 @@
 """
 
 
-def power_numbers(*lst_of_int_numbers):
-    pow_nums = [i ** 2 for i in lst_of_int_numbers]
+def power_numbers(*args):
+    pow_nums = [i ** 2 for i in args]
     return pow_nums
 
 
@@ -40,7 +40,7 @@ PRIME = "prime"  # простые
 
 def main():
     lst = [1, 2, 4, 5, 7, 11, 14, 23, 30, 34, 45, 56]
-    print(f"Массив квадратов чисел: {power_numbers(lst)}")
+    print(f"Массив квадратов чисел: {power_numbers(*lst)}")
     print(f"Массив нечетных чисел: {filter_numbers(lst, ODD)}")
     print(f"Массив четных чисел: {filter_numbers(lst, EVEN)}")
     print(f"Массив простых чисел: {filter_numbers(lst, PRIME)}")
